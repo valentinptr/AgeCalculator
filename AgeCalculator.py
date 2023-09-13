@@ -9,7 +9,7 @@ def age_calculator(date: str) -> int:
                 not ((int(date[0:2]) > 0) & (int(date[0:2]) <= 31))) | (
                 not ((int(date[3:5]) > 0) & (int(date[3:5]) <= 12))) | (
                 not ((int(date[6:]) > 1900) & (int(date[6:]) < datetime.date.today().year))):
-            print('Format de date non correct')
+            print('Formats de date non correct')
             return -1
         else:
             mois: int = int(date[3:5])
